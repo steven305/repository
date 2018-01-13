@@ -1,0 +1,72 @@
+import numpy as np
+A = np.array([1,2,3])
+B = np.array([4,3,0])
+print('A+B = ',np.add(A,B))
+print('A-B = ',np.subtract(A,B))
+
+import numpy as np
+A = np.array([1,2,3])
+B = np.array([4,3,0])
+print('A+B = ',np.add(A,B))
+print('A-B = ',np.subtract(A,B))
+
+C = np.array([[1,2,3],
+            [1,1,1]])
+D = np.array([[4,3,9,9],
+            [1,1,2,2,],
+            [4,2,1,1]])
+print('np.dot(C,D) = ',np.dot(C,D))
+print('np.matmul(C,D) = ',np.matmul(C,D))
+print('        C@D    = ',np.matmul(C,D))
+
+# 元素与元素相乘
+A = np.array([1,2,3])
+print('np.multiply(A,A)=',np.multiply(A,A))
+print('        
+
+  A*A   = ', A*A)
+
+t1 = np.array([1,2,3])
+t2 = np.array([1,2,3])
+print(np.dot(t1,t2))
+print(np.matmul(t1,t2))
+print(t1*t2) # 元素1 1 乘积
+
+m_4_4 = np.array([
+                       [1,2,3,4],
+                       [3,2,1,4],
+                       [5,4,6,7],
+                       [11,12,13,14]
+                      ])
+
+
+m_3_4_2 = np.array([
+                             [[2,3],
+                              [11,9],
+                              [32,21],
+                              [28,17]],
+    
+                             [[2,3],
+                              [1,9],
+                              [3,21],
+                              [28,7]],
+    
+                             [[2,3],
+                              [1,9],
+                              [3,21],
+                              [28,7]]
+                            ])
+
+
+
+print(m_4_4.shape)
+print(m_3_4_2.shape)
+
+print('4x4*3x4x2 dot:\n {}\n'.format(np.dot(m_4_4,m_3_4_2)))
+print('4x4*3x4x2 matmul:\n {}\n'.format(np.matmul(m_4_4,m_3_4_2)))
+
+
+print('4 4 矩阵 与')
+print('3 4 2 矩阵的乘积结果')
+print('dot 结果的维度    =',np.dot(m_4_4,m_3_4_2).shape)
+print('matmul 结果的维度 =',np.matmul(m_4_4,m_3_4_2).shape)
